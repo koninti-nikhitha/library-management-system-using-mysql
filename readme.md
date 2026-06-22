@@ -11,7 +11,6 @@ This project is a simple **Library Management System** built using MySQL. It hel
 * MySQL
 * SQL
 * MySQL Workbench
-* VS Code
 * GitHub
 
 ---
@@ -64,34 +63,6 @@ Tracks which member borrowed which book.
 * Aggregate functions (COUNT, SUM, AVG, MAX, MIN)
 * GROUP BY and HAVING
 * Subqueries
-
----
-
-## 🚀 How to Run the Project
-
-1. Open MySQL Workbench
-2. Run `schema.sql` (create database and tables)
-3. Run `sample_data.sql` (insert data)
-4. Run `queries.sql` (execute queries)
-
----
-
-## 📷 Sample Queries
-
-```sql
-SELECT * FROM Books;
-
-SELECT m.member_name, b.title
-FROM Members m
-JOIN Issued_Books i ON m.member_id = i.member_id
-JOIN Books b ON b.book_id = i.book_id;
-```
-
----
-
-## 👨‍💻 Author
-
-Your Name: Nagesh (replace if needed)
 
 ---
 
